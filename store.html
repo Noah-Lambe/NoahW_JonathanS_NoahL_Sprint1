@@ -1,0 +1,856 @@
+<!-- Title:       Sprint 1 
+     Author:      Noah Whiffen, Noah Lambe
+     Description: Computer Parts website for buying components
+     Dates:       October 28th, 2024 - October 30th, 2024-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modest Mo's Computers</title>
+    <!-- Fonts imported from Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS Link and Javascript Links-->
+    <link href="store-styles.css" rel="stylesheet" />
+    <script src="scrolling.js"></script>
+    <script src="ShoppingCartClasses.js"></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="Images2/Modest mo's computers.jpg"
+        width="1000px"
+        height="200px"
+        alt="Modest Mo's computers"
+      />
+    </header>
+    <div class="content-wrapper">
+      <nav>
+        <div class="navLeft">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            class="socialIcon facebook"
+            ><img src="Images/facebook.png" height="30px"
+          /></a>
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            class="socialIcon twitter"
+            ><img src="Images/twitter.png" height="30px"
+          /></a>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="socialIcon instagram"
+            ><img src="Images/instagram.png" height="30px"
+          /></a>
+          <a
+            href="https://www.tiktok.com/"
+            target="_blank"
+            class="socialIcon tiktok"
+            ><img src="Images/tiktok.png" height="30px"
+          /></a>
+        </div>
+        <div class="navCenter">
+          <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="store.html">Store</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="support.html">Support</a>
+        </div>
+        <div class="navRight">
+          <a href="Cart.html">View Your Cart</a>
+        </div>
+      </nav>
+      <main>
+        <section>
+          <h2>Processors</h2>
+          <div class="scroll-button left" onclick="scrollItemsLeft(this)">
+            &#9664;
+          </div>
+          <div class="shop-container">
+            <div class="shop-content">
+              <img class="shop-image" src="images/i5.jpg" alt="i5 Processor" />
+              <div
+                class="product"
+                data-id="1"
+                data-name="Intel i5-12600 Processor"
+                data-price="271.99"
+                data-img-url="images/i5.jpg"
+              >
+                <h3>Intel i5-12600 Processor</h3>
+                <p>$271.99</p>
+                <button
+                  class="add-to-cart"
+                  data-id="1"
+                  data-name="Intel i5-12600 Processor"
+                  data-price="271.99"
+                  data-img-url="images/i5.jpg"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img class="shop-image" src="images/i7.jpg" alt="i7 Processor" />
+              <div
+                class="product"
+                data-id="2"
+                data-name="Intel i7-10700k Processor"
+                data-price="245.00"
+                data-img-url="images/i7.jpg"
+              >
+                <h3>Intel i7-10700k Processor</h3>
+                <p>$245.00</p>
+                <button
+                  class="add-to-cart"
+                  data-id="2"
+                  data-name="Intel i7-10700k Processor"
+                  data-price="245.00"
+                  data-img-url="images/i7.jpg"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img class="shop-image" src="images/i9.jpg" alt="i9 Processor" />
+              <div
+                class="product"
+                data-id="3"
+                data-name="Intel i9-12900KS Processor"
+                data-price="276.70"
+                data-img-url="images/i9.jpg"
+              >
+                <h3>Intel i9-12900KS Processor</h3>
+                <p>$276.70</p>
+                <button
+                  class="add-to-cart"
+                  data-id="3"
+                  data-name="Intel i9-12900KS Processor"
+                  data-price="276.70"
+                  data-img-url="images/i9.jpg"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="shop-image"
+                src="images/ryzen5-5500.webp"
+                alt="Ryzen 5 5500 Processor"
+              />
+              <div
+                class="product"
+                data-id="4"
+                data-name="AMD Ryzen 5 5500 Processor"
+                data-price="84.06"
+                data-img-url="images/ryzen5-5500.webp"
+              >
+                <h3>AMD Ryzen 5 5500 Processor</h3>
+                <p>$84.06</p>
+                <button
+                  class="add-to-cart"
+                  data-id="4"
+                  data-name="AMD Ryzen 5 5500 Processor"
+                  data-price="84.06"
+                  data-img-url="images/ryzen5-5500.webp"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="shop-image"
+                src="images/ryzen7-5700x.jpg"
+                alt="Ryzen 7 5700X"
+              />
+              <div
+                class="product"
+                data-id="5"
+                data-name="AMD Ryzen 7 5700X"
+                data-price="139.99"
+                data-img-url="images/ryzen7-5700x.jpg"
+              >
+                <h3>AMD Ryzen 7 5700X</h3>
+                <p>$139.99</p>
+                <button
+                  class="add-to-cart"
+                  data-id="5"
+                  data-name="AMD Ryzen 7 5700X"
+                  data-price="139.99"
+                  data-img-url="images/ryzen7-5700x.jpg"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-button right" onclick="scrollItemsRight(this)">
+            &#9654;
+          </div>
+          <div class="ads">
+            <a href="#">
+              <img
+                class="ad-image"
+                src="images/ad1.jpg"
+                alt="Clearance Sales"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="ad-image"
+                src="images/ad2.jpg"
+                alt="Weekly Deal Drops"
+              />
+            </a>
+          </div>
+        </section>
+        <section>
+          <h2>Graphics Cards</h2>
+          <div class="scroll-button left" onclick="scrollItemsLeft(this)">
+            &#9664;
+          </div>
+          <div class="shop-container">
+            <div class="shop-content">
+              <img
+                class="shop-image"
+                src="images/3060.jpg"
+                alt="GeForce RTX 3060"
+              />
+              <div
+                class="product"
+                data-id="6"
+                data-name="GeForce RTX 3060"
+                data-price="284.97"
+                data-img-url="images/3060.jpg"
+              >
+                <h3>GeForce RTX 3060</h3>
+                <p>$284.97</p>
+                <button
+                  class="add-to-cart"
+                  data-id="6"
+                  data-name="GeForce RTX 3060"
+                  data-price="284.97"
+                  data-img-url="images/3060.jpg"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="shop-image"
+                src="images/3080ti.jpg"
+                alt="GeForce RTX 3080ti"
+              />
+              <div
+                class="product"
+                data-id="7"
+                data-name="GeForce RTX 3080Ti"
+                data-price="899.99"
+                data-img-url="images/3080ti.jpg"
+              >
+                <h3>GeForce RTX 3080Ti</h3>
+                <p>$899.99</p>
+                <button
+                  class="add-to-cart"
+                  data-id="7"
+                  data-name="GeForce RTX 3080Ti"
+                  data-price="899.99"
+                  data-img-url="images/3080ti.jpg"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="shop-image"
+                src="images/4060ti.jpg"
+                alt="GeForce RTX 4060ti"
+              />
+              <div
+                class="product"
+                data-id="8"
+                data-name="GeForce RTX 4060ti"
+                data-price="999.99"
+                data-img-url="images/4060ti.jpg"
+              >
+                <h3>GeForce RTX 4060ti</h3>
+                <p>$999.99</p>
+                <button
+                  class="add-to-cart"
+                  data-id="8"
+                  data-name="GeForce RTX 4060ti"
+                  data-price="999.99"
+                  data-img-url="images/4060ti.jpg"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="shop-image"
+                src="images/3050.webp"
+                alt="GeForce RTX 3050"
+              />
+              <div
+                class="product"
+                data-id="9"
+                data-name="GeForce RTX 3050"
+                data-price="199.99"
+                data-img-url="images/3050.webp"
+              >
+                <h3>GeForce RTX 3050</h3>
+                <p>$199.99</p>
+                <button
+                  class="add-to-cart"
+                  data-id="9"
+                  data-name="GeForce RTX 3050"
+                  data-price="199.99"
+                  data-img-url="images/3050.webp"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="shop-image"
+                src="images/4090.jpg"
+                alt="GeForce RTX 4090"
+              />
+              <div
+                class="product"
+                data-id="10"
+                data-name="GeForce RTX 4090"
+                data-price="2254.95"
+                data-img-url="images/4090.jpg"
+              >
+                <h3>GeForce RTX 4090</h3>
+                <p>$2,254.95</p>
+                <button
+                  class="add-to-cart"
+                  data-id="10"
+                  data-name="GeForce RTX 4090"
+                  data-price="2254.95"
+                  data-img-url="images/4090.jpg"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-button right" onclick="scrollItemsRight(this)">
+            &#9654;
+          </div>
+        </section>
+        <section>
+          <h2>RAM</h2>
+          <div class="scroll-button left" onclick="scrollItemsLeft(this)">
+            &#9664;
+          </div>
+          <div class="shop-container">
+            <div class="shop-content">
+              <img
+                class="ram-image"
+                src="images/corsair.webp"
+                alt="Corsair 2x8gb RAM"
+              />
+              <div
+                class="product"
+                data-id="11"
+                data-name="Corsair Vengeance LPX 16Gb"
+                data-price="36.99"
+                data-img-url="images/corsair.webp"
+              >
+                <h3>Corsair Vengeance LPX 16Gb</h3>
+                <p>$36.99</p>
+                <button
+                  class="add-to-cart"
+                  data-id="11"
+                  data-name="Corsair Vengeance LPX 16Gb"
+                  data-price="36.99"
+                  data-img-url="images/corsair.webp"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="ram-image"
+                src="images/corsairRGB.webp"
+                alt="Corsair Vengeance RGB Pro 2x8gb RAM"
+              />
+              <div
+                class="product"
+                data-id="12"
+                data-name="Corsair Vengeance RGB Pro 16Gb"
+                data-price="54.99"
+                data-img-url="images/corsairRGB.webp"
+              >
+                <h3>Corsair Vengeance RGB Pro 16Gb</h3>
+                <p>$54.99</p>
+                <button
+                  class="add-to-cart"
+                  data-id="12"
+                  data-name="Corsair Vengeance RGB Pro 16Gb"
+                  data-price="54.99"
+                  data-img-url="images/corsairRGB.webp"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="ram-image"
+                src="images/T-ForceRam.jpg"
+                alt="T-Force Vulcan 2x8gb RAM"
+              />
+              <div
+                class="product"
+                data-id="13"
+                data-name="T-Force Vulcan 32Gb"
+                data-price="50.49"
+                data-img-url="images/T-ForceRam.jpg"
+              >
+                <h3>T-Force Vulcan 32Gb</h3>
+                <p>$50.49</p>
+                <button
+                  class="add-to-cart"
+                  data-id="13"
+                  data-name="T-Force Vulcan 32Gb"
+                  data-price="50.49"
+                  data-img-url="images/T-ForceRam.jpg"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="ram-image"
+                src="images/kingstonFury.webp"
+                alt="Kingston Fury Beast 32gb"
+              />
+              <div
+                class="product"
+                data-id="14"
+                data-name="Kingston Fury Beast 32Gb"
+                data-price="104.99"
+                data-img-url="images/kingstonFury.webp"
+              >
+                <h3>Kingston Fury Beast 32Gb</h3>
+                <p>$104.99</p>
+                <button
+                  class="add-to-cart"
+                  data-id="14"
+                  data-name="Kingston Fury Beast 32Gb"
+                  data-price="104.99"
+                  data-img-url="images/kingstonFury.webp"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="ram-image"
+                src="images/crucial.webp"
+                alt="Crucial 2x4Gb"
+              />
+              <div
+                class="product"
+                data-id="15"
+                data-name="Crucial 8Gb"
+                data-price="35.00"
+                data-img-url="images/crucial.webp"
+              >
+                <h3>Crucial 8Gb</h3>
+                <p>$35.00</p>
+                <button
+                  class="add-to-cart"
+                  data-id="15"
+                  data-name="Crucial 8Gb"
+                  data-price="35.00"
+                  data-img-url="images/crucial.webp"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="ram-image"
+                src="images/SiliconPower.webp"
+                alt="Silicon Power 2x4Gb"
+              />
+              <div
+                class="product"
+                data-id="16"
+                data-name="Silicon Power 8Gb"
+                data-price="40.14"
+                data-img-url="images/SiliconPower.webp"
+              >
+                <h3>Silicon Power 8Gb</h3>
+                <p>$40.14</p>
+                <button
+                  class="add-to-cart"
+                  data-id="16"
+                  data-name="Silicon Power 8Gb"
+                  data-price="40.14"
+                  data-img-url="images/SiliconPower.webp"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-button right" onclick="scrollItemsRight(this)">
+            &#9654;
+          </div>
+          <div class="ads">
+            <a href="#">
+              <img
+                class="ad-image"
+                src="images/ad1.jpg"
+                alt="Clearance Sales"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="ad-image"
+                src="images/ad2.jpg"
+                alt="Weekly Deal Drops"
+              />
+            </a>
+          </div>
+        </section>
+        <section>
+          <h2>Motherboards</h2>
+          <div class="scroll-button left" onclick="scrollItemsLeft(this)">
+            &#9664;
+          </div>
+          <div class="shop-container">
+            <div class="shop-content">
+              <img
+                class="mobo-image"
+                src="images/asuspro.webp"
+                alt="Asus Pro A520M-C Motherboard"
+              />
+              <div
+                class="product"
+                data-id="17"
+                data-name="Asus Pro A520M-C Motherboard"
+                data-price="79.99"
+                data-img-url="images/asuspro.webp"
+              >
+                <h3>Asus Pro A520M-C Motherboard</h3>
+                <p>$79.99</p>
+                <button
+                  class="add-to-cart"
+                  data-id="17"
+                  data-name="Asus Pro A520M-C Motherboard"
+                  data-price="79.99"
+                  data-img-url="images/asuspro.webp"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="mobo-image"
+                src="images/b550-f-rog.webp"
+                alt="Asus B550 F Rog Motherboard"
+              />
+              <div
+                class="product"
+                data-id="18"
+                data-name="Asus B550 F Rog Motherboard"
+                data-price="130.99"
+                data-img-url="images/b550-f-rog.webp"
+              >
+                <h3>Asus B550 F Rog Motherboard</h3>
+                <p>$130.99</p>
+                <button
+                  class="add-to-cart"
+                  data-id="18"
+                  data-name="Asus B550 F Rog Motherboard"
+                  data-price="130.99"
+                  data-img-url="images/b550-f-rog.webp"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="mobo-image"
+                src="images/msi-mpg-b550.webp"
+                alt="MSI B550 Gaming Plus Motherboard"
+              />
+              <div
+                class="product"
+                data-id="19"
+                data-name="MSI B550 Gaming Plus Motherboard"
+                data-price="159.99"
+                data-img-url="images/msi-mpg-b550.webp"
+              >
+                <h3>MSI B550 Gaming Plus Motherboard</h3>
+                <p>$159.99</p>
+                <button
+                  class="add-to-cart"
+                  data-id="19"
+                  data-name="MSI B550 Gaming Plus Motherboard"
+                  data-price="159.99"
+                  data-img-url="images/msi-mpg-b550.webp"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="mobo-image"
+                src="images/msi-pro-b650m-p.webp"
+                alt="MSI Pro 650M-P Motherboard"
+              />
+              <div
+                class="product"
+                data-id="20"
+                data-name="MSI Pro 650M-P Motherboard"
+                data-price="119.99"
+                data-img-url="images/msi-pro-b650m-p.webp"
+              >
+                <h3>MSI Pro 650M-P Motherboard</h3>
+                <p>$119.99</p>
+                <button
+                  class="add-to-cart"
+                  data-id="20"
+                  data-name="MSI Pro 650M-P Motherboard"
+                  data-price="119.99"
+                  data-img-url="images/msi-pro-b650m-p.webp"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="mobo-image"
+                src="images/maximusz890.webp"
+                alt="ROG Maximus Z890 Motherboard"
+              />
+              <div
+                class="product"
+                data-id="21"
+                data-name="ROG Maximus Z890 Motherboard"
+                data-price="699.99"
+                data-img-url="images/maximusz890.webp"
+              >
+                <h3>ROG Maximus Z890 Motherboard</h3>
+                <p>$699.99</p>
+                <button
+                  class="add-to-cart"
+                  data-id="21"
+                  data-name="ROG Maximus Z890 Motherboard"
+                  data-price="699.99"
+                  data-img-url="images/maximusz890.webp"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="mobo-image"
+                src="images/supermicro.webp"
+                alt="Supermicro X12SPM-LN4F Motherboard"
+              />
+              <div
+                class="product"
+                data-id="22"
+                data-name="Supermicro X12SPM-LN4F Motherboard"
+                data-price="634.99"
+                data-img-url="images/supermicro.webp"
+              >
+                <h3>Supermicro X12SPM-LN4F Motherboard</h3>
+                <p>$634.99</p>
+                <button
+                  class="add-to-cart"
+                  data-id="22"
+                  data-name="Supermicro X12SPM-LN4F Motherboard"
+                  data-price="634.99"
+                  data-img-url="images/supermicro.webp"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-button right" onclick="scrollItemsRight(this)">
+            &#9654;
+          </div>
+        </section>
+        <section>
+          <h2>Storage Devices</h2>
+          <div class="scroll-button left" onclick="scrollItemsLeft(this)">
+            &#9664;
+          </div>
+          <div class="shop-container">
+            <div class="shop-content">
+              <img
+                class="shop-image"
+                src="images/6tb-harddrive.webp"
+                alt="Seagate Ironwolf 6TB Hard Drive"
+              />
+              <div
+                class="product"
+                data-id="23"
+                data-name="Seagate Ironwolf 6TB Hard Drive"
+                data-price="999.99"
+                data-img-url="images/6tb-harddrive.webp"
+              >
+                <h3>Seagate Ironwolf 6TB Hard Drive</h3>
+                <p>$999.99</p>
+                <button
+                  class="add-to-cart"
+                  data-id="23"
+                  data-name="Seagate Ironwolf 6TB Hard Drive"
+                  data-price="999.99"
+                  data-img-url="images/6tb-harddrive.webp"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="shop-image"
+                src="images/8tb-harddrive.webp"
+                alt="Seagate Barracuda 8TB Hard Drive"
+              />
+              <div
+                class="product"
+                data-id="24"
+                data-name="Seagate Barracuda 8TB Hard Drive"
+                data-price="134.99"
+                data-img-url="images/8tb-harddrive.webp"
+              >
+                <h3>Seagate Barracuda 8TB Hard Drive</h3>
+                <p>$134.99</p>
+                <button
+                  class="add-to-cart"
+                  data-id="24"
+                  data-name="Seagate Barracuda 8TB Hard Drive"
+                  data-price="134.99"
+                  data-img-url="images/8tb-harddrive.webp"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="shop-image"
+                src="images/16tb-harddrive.jpg"
+                alt="Seagate Ironwolf Pro 16TB Hard Drive"
+              />
+              <div
+                class="product"
+                data-id="25"
+                data-name="Seagate Ironwolf Pro 16TB Hard Drive"
+                data-price="269.99"
+                data-img-url="images/16tb-harddrive.jpg"
+              >
+                <h3>Seagate Ironwolf Pro 16TB Hard Drive</h3>
+                <p>$269.99</p>
+                <button
+                  class="add-to-cart"
+                  data-id="25"
+                  data-name="Seagate Ironwolf Pro 16TB Hard Drive"
+                  data-price="269.99"
+                  data-img-url="images/16tb-harddrive.jpg"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="shop-image"
+                src="images/ssd.webp"
+                alt="Samsung 2TB Solid State Drive"
+              />
+              <div
+                class="product"
+                data-id="26"
+                data-name="Samsung 2TB Solid State Drive"
+                data-price="185.20"
+                data-img-url="images/ssd.webp"
+              >
+                <h3>Samsung 2TB Solid State Drive</h3>
+                <p>$185.20</p>
+                <button
+                  class="add-to-cart"
+                  data-id="26"
+                  data-name="Samsung 2TB Solid State Drive"
+                  data-price="185.20"
+                  data-img-url="images/ssd.webp"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="shop-content">
+              <img
+                class="shop-image"
+                src="images/evossd.jpg"
+                alt="Samsung SSD 870 EVO 2Tb"
+              />
+              <div
+                class="product"
+                data-id="27"
+                data-name="Samsung SSD 870 EVO 2Tb"
+                data-price="52.99"
+                data-img-url="images/evossd.jpg"
+              >
+                <h3>Samsung SSD 870 EVO 2Tb</h3>
+                <p>$52.99</p>
+                <button
+                  class="add-to-cart"
+                  data-id="27"
+                  data-name="Samsung SSD 870 EVO 2Tb"
+                  data-price="52.99"
+                  data-img-url="images/evossd.jpg"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-button right" onclick="scrollItemsRight(this)">
+            &#9654;
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <p><a href="#">Privacy Policy</a></p>
+      <p><a href="#">Terms and Conditions</a></p>
+      <p>&copy; 2024 Modest Mo's Computers. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

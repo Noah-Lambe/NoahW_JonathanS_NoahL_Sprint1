@@ -1,0 +1,290 @@
+<!-- Name: Jonathan Strickland, Noah Lambe
+Date: 2024-10-30
+Desc: Sprint 1 HTML for index -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modest Mo's Computers</title>
+    <link rel="stylesheet" href="index-styles.css" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <!-- Banner -->
+        <img
+          src="media/Modest_mos_computers.jpg"
+          width="1000px"
+          height="200px"
+          alt="Modest Mo's computers"
+        />
+      </header>
+    </section>
+
+    <nav>
+      <div class="navLeft">
+        <!-- Social media links -->
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          class="socialIcon facebook"
+        >
+          <img src="media/facebook.png" height="30px" alt="Facebook" />
+        </a>
+        <a
+          href="https://twitter.com/"
+          target="_blank"
+          class="socialIcon twitter"
+        >
+          <img src="media/twitter.png" height="30px" alt="Twitter" />
+        </a>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          class="socialIcon instagram"
+        >
+          <img src="media/instagram.png" height="30px" alt="Instagram" />
+        </a>
+        <a
+          href="https://www.tiktok.com/"
+          target="_blank"
+          class="socialIcon tiktok"
+        >
+          <img src="media/tiktok.png" height="30px" alt="TikTok" />
+        </a>
+      </div>
+
+      <div class="navCenter">
+        <!-- Navigation -->
+        <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="store.html">Store</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="support.html">Support</a>
+      </div>
+
+      <div class="navRight">
+        <a href="Cart.html">View Your Cart</a>
+      </div>
+    </nav>
+
+    <main>
+      <section>
+        <div class="content-div">
+          <!-- Header for First Square -->
+          <h3>Modest Mo's, A shop for all your necessary computer repairs</h3>
+        </div>
+
+        <!-- Start of First Square -->
+        <div class="mainDiv1">
+          <div class="maindivBox1">
+            <div class="locbox">
+              <p>We are located on 123 Main St</p>
+            </div>
+            <div class="hourbox">Our Hours of Operation</div>
+            <div class="hourbox">Mon-Fri: 8am-5pm</div>
+            <div class="hourbox">Sat: 10am-4pm</div>
+            <div class="hourbox">Sun: Closed</div>
+            <div class="shopbox">
+              <img
+                class="shopimage"
+                src="media/shop.jpg"
+                alt="Modest Mo's Computers"
+              />
+            </div>
+            <div class="textbox">
+              <p>
+                Established in 2000, Modest Mo's has been keeping his customers'
+                computers in top-notch condition for over 20 years. Here at
+                Modest Mo's we strive to meet our customers' expectations and
+                beyond. Having computer issues? Call Mo at 709-555-5544.
+              </p>
+              <div class="lowpricebox">
+                <img
+                  class="lowpriceimage"
+                  src="media/lowprice.png"
+                  alt="Low Prices"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="content-div">
+          <!-- Header for Second Square -->
+          <h3>Deals on Prebuilt Computers</h3>
+        </div>
+
+        <!-- Start of Second Square -->
+        <div class="mainDiv2">
+          <!-- First Computer -->
+          <div class="pc-container">
+            <img
+              class="featured-images"
+              src="media/whitepc.jpg"
+              width="200px"
+              alt="Prebuilt PC White"
+            />
+            <div
+              class="product"
+              data-id="28"
+              data-name="Prebuilt PC White"
+              data-price="899.99"
+              data-img-url="media/whitepc.jpg"
+            >
+              <div class="spec-item">
+                <div>CPU</div>
+                <div>i5-10400KF</div>
+              </div>
+              <div class="spec-item">
+                <div>GPU</div>
+                <div>NVIDIA GeForce 3060ti</div>
+              </div>
+              <div class="spec-item">
+                <div>Memory</div>
+                <div>16GB (2 x 8GB) DDR5 5200 MHz</div>
+              </div>
+              <div class="spec-item">
+                <div>Motherboard</div>
+                <div>Asus Prime B560M</div>
+              </div>
+              <div class="spec-item">
+                <div>Storage</div>
+                <div>1TB NVMe M.2 SSD</div>
+              </div>
+              <div class="spec-item">
+                <div>PSU</div>
+                <div>650W Gold</div>
+              </div>
+              <p class="text-color">$899.99</p>
+              <button
+                class="add-to-cart"
+                data-id="28"
+                data-name="Prebuilt PC White"
+                data-price="899.99"
+                data-img-url="media/whitepc.jpg"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Second Computer -->
+          <div class="pc-container">
+            <img
+              class="featured-images"
+              src="media/blackpc.jpg"
+              width="200px"
+              alt="Prebuilt PC Black"
+            />
+            <div
+              class="product"
+              data-id="29"
+              data-name="Prebuilt PC Black"
+              data-price="1699.99"
+              data-img-url="media/blackpc.jpg"
+            >
+              <div class="spec-item">
+                <div>CPU</div>
+                <div>Intel i9-13900F</div>
+              </div>
+              <div class="spec-item">
+                <div>GPU</div>
+                <div>NVIDIA GeForce 4090</div>
+              </div>
+              <div class="spec-item">
+                <div>Memory</div>
+                <div>64GB (4 x 16GB) DDR5 6000 MHz</div>
+              </div>
+              <div class="spec-item">
+                <div>Motherboard</div>
+                <div>ROG STRIX B790-F</div>
+              </div>
+              <div class="spec-item">
+                <div>Storage</div>
+                <div>2TB NVMe M.2 SSD</div>
+              </div>
+              <div class="spec-item">
+                <div>PSU</div>
+                <div>1350W Gold</div>
+              </div>
+              <p class="text-color">$1699.99</p>
+              <button
+                class="add-to-cart"
+                data-id="29"
+                data-name="Prebuilt PC Black"
+                data-price="1699.99"
+                data-img-url="media/blackpc.jpg"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Third Computer -->
+          <div class="pc-container">
+            <img
+              class="featured-images"
+              src="media/pc.jpg"
+              width="200px"
+              alt="Prebuilt PC"
+            />
+            <div
+              class="product"
+              data-id="30"
+              data-name="Prebuilt PC"
+              data-price="1299.99"
+              data-img-url="media/pc.jpg"
+            >
+              <div class="spec-item">
+                <div>CPU</div>
+                <div>Intel i7-14700F</div>
+              </div>
+              <div class="spec-item">
+                <div>GPU</div>
+                <div>NVIDIA GeForce 4070 SUPER</div>
+              </div>
+              <div class="spec-item">
+                <div>Memory</div>
+                <div>32GB (2 x 16GB) DDR5 6000 MHz</div>
+              </div>
+              <div class="spec-item">
+                <div>Motherboard</div>
+                <div>ROG STRIX B760-F</div>
+              </div>
+              <div class="spec-item">
+                <div>Storage</div>
+                <div>2TB NVMe M.2 SSD</div>
+              </div>
+              <div class="spec-item">
+                <div>PSU</div>
+                <div>850W Gold</div>
+              </div>
+              <p class="text-color">$1299.99</p>
+              <button
+                class="add-to-cart"
+                data-id="30"
+                data-name="Prebuilt PC"
+                data-price="1299.99"
+                data-img-url="media/pc.jpg"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p><a href="#">Privacy Policy</a></p>
+      <p><a href="#">Terms and Conditions</a></p>
+      <p>&copy; 2024 Modest Mo's Computers. All rights reserved.</p>
+    </footer>
+
+    <script src="ShoppingCartClasses.js"></script>
+  </body>
+</html>

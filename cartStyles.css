@@ -1,0 +1,578 @@
+/* Author: Noah Lambe */
+/* Date: October 28, 2024 */
+/* Description: CSS for Cart page */
+
+* {
+  margin: 0;
+  font-family: "Inter", "Helvetica Neue";
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+nav,
+.container,
+footer {
+  margin: auto;
+  width: 80%;
+}
+
+header {
+  background-color: white;
+  text-align: center;
+  height: 200px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+label {
+  margin-top: 20px;
+}
+
+nav {
+  background-color: white;
+  height: 20px;
+  padding: 40px;
+  padding-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.navLeft {
+  width: 25%;
+  float: left;
+  background-color: white;
+  padding-bottom: 0px;
+  margin-top: -5px;
+}
+
+.navLeft a:hover {
+  background-color: white;
+}
+
+.socialIcon img:hover {
+  opacity: 0;
+}
+
+.socialIcon.facebook:hover {
+  background: url("Images/facebookBlue.png") no-repeat center center;
+  background-size: cover;
+}
+
+.socialIcon.twitter:hover {
+  background: url("Images/twitter\ blue.png") no-repeat center center;
+  background-size: cover;
+}
+
+.socialIcon.instagram:hover {
+  background: url("Images/instagramBlue.png") no-repeat center center;
+  background-size: cover;
+}
+
+.socialIcon.tiktok:hover {
+  background: url("Images/tiktokBlue.png") no-repeat center center;
+  background-size: cover;
+}
+
+.socialIcon {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  position: relative;
+}
+
+.socialIcon img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.navCenter {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 50%;
+  float: left;
+  background-color: white;
+}
+
+.navCenter a:link {
+  color: #3946ff;
+  text-decoration: none;
+}
+
+.navCenter a:visited {
+  color: #3946ff;
+  text-decoration: none;
+}
+
+.navCenter a:hover {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+
+.navRight a:link {
+  color: #3946ff;
+  text-decoration: none;
+}
+
+.navRight a:visited {
+  color: #3946ff;
+  text-decoration: none;
+}
+
+.navRight a:hover {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+
+.navRight {
+  width: 25%;
+  text-align: right;
+  list-style: none;
+  float: left;
+  background-color: white;
+}
+
+.container {
+  background-color: none;
+  display: grid;
+  grid-template-areas:
+    "main text1"
+    "text2 article";
+  grid-template-rows: auto auto;
+  grid-template-columns: 2fr 1fr;
+  height: auto;
+  min-height: 56vh;
+  gap: 10px;
+}
+
+.container h2 {
+  border-bottom: 2px solid #0073e6;
+  padding-bottom: 10px;
+}
+
+.container p {
+  margin: 10px 0;
+}
+
+main {
+  grid-area: main;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  padding: 20px;
+}
+
+.text1 {
+  grid-area: text1;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  padding: 20px;
+}
+
+article {
+  grid-area: article;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  padding: 20px;
+}
+
+.text2 {
+  grid-area: text2;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  padding: 20px;
+}
+
+main,
+.text1,
+article,
+.text2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #3946ff;
+  color: white;
+  font-size: small;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  width: 100%;
+}
+
+footer a:link {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:visited {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+/* Address form styling */
+.form-popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #f1f1f1;
+  z-index: 9;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgb(126, 126, 126);
+  border-radius: 5px;
+  height: 90%;
+  font-family: "Inter", "Helvetica Neue";
+  overflow-y: auto;
+}
+
+.form-popup-content {
+  display: block;
+}
+
+.form-popup.active {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+label {
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+#exit {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #efefef;
+  color: #7d7d7d;
+}
+
+.form-popup button {
+  background-color: #3946ff;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+}
+
+button.cancel {
+  background-color: #f44336;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.delete-btn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background-color: #f44336;
+}
+
+.form-popup::-webkit-scrollbar {
+  width: 6px;
+}
+
+.form-popup::-webkit-scrollbar-thumb {
+  background-color: #b2b2b2;
+  border-radius: 10px;
+}
+
+#alerts {
+  background-color: green;
+}
+
+/* Payment form styling */
+/* #openPaymentFormBtn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+} */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  width: 70%;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#paymentForm label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+  font-weight: bold;
+}
+
+#paymentForm input[type="text"],
+#paymentForm input[type="radio"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#paymentForm div {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#paymentForm input[type="radio"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.alert {
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.alert.success {
+  color: #5cb85c;
+}
+
+#paymentForm button[type="submit"] {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #3946ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#paymentForm button[type="submit"]:hover {
+  background-color: #3946ff;
+}
+
+.hidden {
+  display: none;
+}
+
+#paymentList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.payment-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.payment-method {
+  font-weight: bold;
+  color: #3946ff;
+  margin-bottom: 5px;
+}
+
+.payment-details {
+  color: #555;
+  line-height: 1.4;
+}
+
+.payment-details p {
+  margin: 3px 0;
+}
+
+.remove-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 10px; /* Smaller button */
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.remove-btn:hover {
+  background-color: #f44336;
+}
+
+.payment-clear {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+#box {
+  width: 100%;
+  height: 100px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-style {
+  background-color: #3946ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.shipping-address {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-item-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.remove-item-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
