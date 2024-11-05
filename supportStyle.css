@@ -57,22 +57,22 @@ nav {
 }
 
 .socialIcon.facebook:hover {
-  background: url("Images/facebookBlue.png") no-repeat center center;
+  background: url("Images2/facebookBlue.png") no-repeat center center;
   background-size: cover;
 }
 
 .socialIcon.twitter:hover {
-  background: url("Images/twitter\ blue.png") no-repeat center center;
+  background: url("Images2/twitter\ blue.png") no-repeat center center;
   background-size: cover;
 }
 
 .socialIcon.instagram:hover {
-  background: url("Images/instagramBlue.png") no-repeat center center;
+  background: url("Images2/instagramBlue.png") no-repeat center center;
   background-size: cover;
 }
 
 .socialIcon.tiktok:hover {
-  background: url("Images/tiktokBlue.png") no-repeat center center;
+  background: url("Images2/tiktokBlue.png") no-repeat center center;
   background-size: cover;
 }
 
